@@ -4,6 +4,13 @@
 
 {#{% block content_header '' %}#}
 
+{#{% block head %}#}
+{#    <link rel="stylesheet" href="{{ asset('bundles/acmedemo/css/jBox.css') }}" />#}
+        {#<script src="{{ asset('bundles/acmedemo/js/jquery-3.2.1.min.js') }}"></script>#}
+{#{% endblock %}#}
+
+
+
 {% block content %}
 
 
@@ -88,6 +95,9 @@
     <div class="body">
         
     <div class="container">    
+        {#<div id="Modal-1" class="target-click">Click me</div>#}
+        
+
         
         <div class="row">
           {#<div class="col-lg-4">#}
@@ -96,28 +106,27 @@
             {#<img class="imagen-juego" src="{{ asset('bundles/acmedemo/images/game/imagen1.jpg') }}"  />#}
           {#</div>#}
           
-          
+         {#<div class="targets-wrapper">#}
             <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
                 <div class="hovereffect">
                     <img class="img-responsive imagen-juego" src="{{ asset('bundles/acmedemo/images/game/imagen1.jpg') }}" alt="">
                         <div class="overlay">
                             <h2>GAME NAME</h2>
                             <p class="icon-links">
-                                <a href="#">
-                                    <span class="fa fa-twitter"> x </span>
-                                </a>
-                                <a href="#">
-                                    <span class="fa fa-facebook"> x </span>
-                                </a>
-                                <a href="#">
-                                    <span class="fa fa-instagram"> x </span>
-                                </a>
+                                {#<a href="#">#}
+                                {#    <span class="fa fa-twitter"> x </span>#}
+                                {#</a>#}
+                                <a id="Modal-1" class="target-click">x</a>
                             </p>
                         </div>
                 </div>
             </div>
+         
+         
+         
+
           
-          
+         {#</div>  #}
           
           {#<div class="col-lg-4">#}
                 {#<h1>Columna 2</h1> #}
@@ -152,28 +161,28 @@
           
           
           
-          <div class="col-lg-4">
+        <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
             {#<h1>Columna 3</h1> #}
             {#<p>Esto es una prueba de bootstrap.</p>#}
             <img class="imagen-juego" src="{{ asset('bundles/acmedemo/images/game/imagen3.jpg') }}"  />
-          </div>
         </div>
+        
 
 
 
         
-        <div class="row">
-          <div class="col-lg-4">
+        
+          <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
             {#<h1>Columna 1</h1> #}
             {#<p>Esto es una prueba de bootstrap.</p>#}
             <img class="imagen-juego" src="{{ asset('bundles/acmedemo/images/game/imagen4.jpg') }}"  />
           </div>
-          <div class="col-lg-4">
+          <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
             {#<h1>Columna 2</h1> #}
             {#<p>Esto es una prueba de bootstrap.</p>#}
             <img class="imagen-juego" src="{{ asset('bundles/acmedemo/images/game/imagen5.jpg') }}"  />
           </div>
-          <div class="col-lg-4">
+          <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
             {#<h1>Columna 3</h1> #}
             {#<p>Esto es una prueba de bootstrap.</p>#}
             <img class="imagen-juego" src="{{ asset('bundles/acmedemo/images/game/imagen6.jpg') }}"  />
@@ -181,4 +190,38 @@
         </div>        
         
     </div>
+    
+    
+    {#<p id="tagline">click aqui</p>#}
+    {#<p class="tagline">click aqui</p>#}
+ 
+    <script src="{{ asset('bundles/acmedemo/js/jquery-3.2.1.js') }}"></script>
+    <script src="{{ asset('bundles/acmedemo/js/Demo.js') }}"></script>
+    <script src="{{ asset('bundles/acmedemo/js/jquery-3.2.1.min.js') }}"></script>
+    <script src="{{ asset('bundles/acmedemo/js/funcion.js') }}"></script>
+    <script src="{{ asset('bundles/acmedemo/js/jBox.js') }}"></script>
+    <script src="{{ asset('bundles/acmedemo/js/jBox.min.js') }}"></script>
+    <script src="{{ asset('bundles/acmedemo/js/jBox.Confirm.js') }}"></script>
+    <script src="{{ asset('bundles/acmedemo/js/jBox.Confirm.min.js') }}"></script>
+    <script src="{{ asset('bundles/acmedemo/js/jBox.Image.js') }}"></script>
+    <script src="{{ asset('bundles/acmedemo/js/jBox.Image.min.js') }}"></script>
+    <script src="{{ asset('bundles/acmedemo/js/jBox.Notice.js') }}"></script>
+    <script src="{{ asset('bundles/acmedemo/js/jBox.Notice.min.js') }}"></script>
+
+    <script>
+    
+    //   $(document).ready(function(){
+    //         console.log("Script working properly");
+    //     });
+        
+    </script>
+    {#<script src="{{ asset('bundles/acmedemo/js/jquery-3.2.1.js') }}"></script>#}
+    {#<script src="{{ asset('bundles/acmedemo/js/jquery-3.2.1.min.js') }}"></script>#}
+    {#<script src="{{ asset('bundles/acmedemo/js/jBox.js') }}"></script>#}
+    {#<script src="{{ asset('bundles/acmedemo/js/funcion.js') }}"></script>#}
+{% endblock %}
+
+{% block javascripts %}
+    {#<script src="{{ asset('bundles/acmedemo/js/jquery-3.2.1.js') }}"></script>#}
+    {#<script src="{{ asset('funcion.js') }}"></script>#}
 {% endblock %}
